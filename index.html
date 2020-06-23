@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Davie's Burger</title>
+      <link rel= "stylesheet" type= "text/css" href= "style.css">
+    </head>
+<body>
+  <section class ="body">
+    <img src ="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt ="Davie's Burger Logo" id ="logo">
+    <hr>
+  <section id="buger">
+    <h1>Create a burger!</h1>
+  <form action="submission.html" method="POST">
+    <section class="protein">
+    <label for ="patty">What type of protein would you like ?</label>
+    <input type ="text" name ="patty" id ="patty">
+  </section>
+  <hr>
+  <section class ="patty">
+    <label for ="amount">How many patties would you like ?</label>
+    <input type ="number" name ="amount" id ="amount">
+  </section>
+  <hr>
+  <section class ="cook">
+    <label for ="cooked">How do you want your patty cooked ?</label>
+    <br>
+    <span>Rare</span>
+    <input type ="range" name ="cooked" id ="cooked" min ="1" max ="5" value ="3">
+    <span>Well-Done</span>
+  </section>
+  <hr>
+  <section class ="topping">
+    <label for ="toppings">What toppings would you like ?</label>
+    <br>
+    <input id ="lettuce" type ="checkbox" value ="lettuce" name ="toppings">
+    <label for ="lettuce">Lettuce</label>
+    <input id ="tomato" type ="checkbox" value ="tomato" name ="toppings">
+    <label for ="tomato">Tomato</label>
+    <input id ="onion" type ="checkbox" value ="onion" name ="toppings" value ="onion">
+    <label for ="onion">Onion</label>
+  </section>
+  <hr>
+  <section class ="cheesey">
+    <label for ="cheese">Whould you like to add cheese ?</label>
+    <br>
+    <input type ="radio" id ="yes" value ="yes" name ="yes">
+    <label for ="yes">Yes</label>
+    <input type ="radio" id ="no" value ="no" name ="no">
+    <label for ="no">No</label>
+    <hr>
+    <section class ="buntype">
+      <label for ="bun">What type of bun would you like</label>
+      <select name="bun" id ="bun">
+        <option value ="sesame">Sesame</option>
+        <option value ="pretzel">Pretzel</option>
+        <option value ="bred">Bread</option>
+      </select>
+    </section>
+  </section>
+  <hr>
+  <section class ="saucetype">
+    <label for ="sauce">What type of sauce would you like ?</label>
+    <input list ="sauces" id ="sauce" name ="sauce">
+    <datalist id ="sauces">
+      <option value ="ketchup"></option>
+      <option value ="mayo"></option>
+      <option value ="mustard"></option>
+    </datalist>
+  </section>
+  <hr>
+  <section class ="extroinfor">
+    <label for ="extra">Anything else you want to add ?</label>
+    <br>
+    <textarea id ="extra" value ="extra" rows ="3" cols ="40"></textarea>
+  </section>
+  <hr>
+  <section id="submission" >
+    <input type = "submit" name ="submit" value ="Submit">
+  </section>
+</form>
+</section>
+</section>
+</body>
+</html>
